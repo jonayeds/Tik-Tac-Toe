@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Tik Tac Toe</title>
+    <link rel="shortcut icon" href="https://t0.gstatic.com/licensed-image?q=tbn:ANd9GcQsJEpbrBLWAyjRR82eWUxKb4WpXjIOVB-g-KFOkyaP1zSPympYcoYd61hef9xEnRzT" type="image/x-icon">
+    <!-- daisy ui and tailwind -->
+    
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- custom styles -->
+    <link rel="stylesheet" href="./scripts/styles.css">
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/1e67654919.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-gradient-to-br from-[#E8D8D8] to-[#454040] min-h-[100vh]">
+    <header class="">
+        
+    </header>
+    <main class="">
+
+
+        <!-- home page -->
+        <section class="min-h-[100vh] flex flex-col justify-center items-center " id="home-page">
+            <div class="text-center">
+                <h2 class="text-[#6d6969] text-4xl  font-riot"><i class="fa-solid fa-circle-notch text-[#d8cccc] -rotate-90"></i> Tik Tac Toe <i class="fa-brands fa-mixer text-[#d8cccc]"></i></h1>
+                <h1 class="text-[#4a4646] text-8xl  font-gorila ">MASTER</h1>
+                <button class="btn hover:bg-[#d8cccc] hover:text-black  border-none px-12 mt-6 bg-[#454040] " id="start-game">Play</button>
+            </div>
+        </section>
+
+
+        <!-- play game page -->
+        <section class="flex justify-center items-center min-h-[100vh] hidden" id="play-game-page">
+            <div class="  md:min-w-96 ">
+                <div class="grid grid-cols-3 lg:w-[700px] w-[350px]  bg-[#d8cccc] text-center rounded-lg p-6 items-center border-solid border-[#fff1f1] border-[1px] shadow-xl font-riot" id="play-board">
+                    <div class="border-solid border-b-[4px] border-r-[4px] h-24  border-b-black border-r-black" id="0">
+                        <h1 class="text-8xl "></h1>
+                    </div>
+                    <div class="border-solid border-b-[4px] border-r-[4px] h-24  border-b-black border-r-black " id="1">
+                        <h1 class="text-8xl "></h1>
+                    </div>
+                    <div class="border-solid border-b-[4px]  border-b-black h-24" id="2">
+                        <h1 class="text-8xl "></h1>
+                    </div>
+                    <div class="border-solid border-b-[4px] border-r-[4px] h-24  border-b-black border-r-black" id="3">
+                        <h1 class="text-8xl "></h1>
+                    </div>
+                    <div class="border-solid border-b-[4px] h-24 border-r-[4px]  border-b-black border-r-black" id="4">
+                        <h1 class="text-8xl "></h1>
+                    </div>
+                    <div class="border-solid border-b-[4px] h-24   border-b-black " id="5">
+                        <h1 class="text-8xl "></h1>
+                    </div>
+                    <div class="border-solid  border-r-[4px] h-24   border-r-black" id="6">
+                        <h1 class="text-8xl "></h1>
+                    </div>
+                    <div class="border-solid border-r-[4px] h-24  border-r-black" id="7">
+                        <h1 class="text-8xl "></h1>
+                    </div>
+                    <div class=" h-24" id="8">
+                        <h1 class="text-8xl "></h1>
+                    </div> 
+                </div>
+                <div class="hidden p-10" id="result">
+                    <h1 id="winner" class="text-5xl">You Won</h1>
+                   <button id="continue-play" class="btn hover:bg-[#d8cccc] hover:text-black  border-none px-12 mt-6 bg-[#454040] ">Continue Play</button>
+
+                </div>
+                <div class="" id="user-option">
+                    <h1 class="text-center mt-10 mb-4 text-4xl text-[#cfc4c4]">Choose your Side</h1>
+                <div class="flex justify-center  text-7xl font-riot  gap-12">
+                    <button class=" bg-[#444040] rounded-lg border-[1px] border-black px-10  hover:bg-white" id="O-side">O</button>
+                    <button class=" bg-[#444040] rounded-lg border-[1px] border-black px-10  hover:bg-white" id="X-side">X</button>
+                </div>
+                </div>
+                <div class="flex justify-between items-center mt-8 gap-9">
+                    <div>
+                        <button class="btn btn-primary bg-[#2d2b2b] text-white border-none hover:bg-white hover:text-[#2d2b2b] " >Your score: <span id="user-score">0</span></button><br>
+                        <button class="btn btn-primary bg-[#2d2b2b] text-white border-none hover:bg-white hover:text-[#2d2b2b] mt-4" >Computer score: <span id="comp-score">0</span></button>
+                    </div>
+                    <button class="btn btn-primary bg-[#2d2b2b] text-white border-none hover:bg-white hover:text-[#2d2b2b]">round: <span id="round">0</span></button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src="./scripts/scriptsMain.js"></script>
+</body>
+</html>

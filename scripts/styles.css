@@ -1,0 +1,9 @@
+/* custom fonts */
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Protest+Riot&display=swap');
+
+.font-gorila{
+    font-family: "Protest Guerrilla", sans-serif;
+}
+.font-riot{
+    font-family: "Protest Riot", sans-serif;
+}
