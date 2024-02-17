@@ -45,7 +45,12 @@ function result(user,comp){
         compScore++
         document.getElementById('comp-score').innerText = compScore
     }
-    
+    else if(!newArr.includes('')){
+        let playBoard = document.getElementById('play-board')
+        playBoard.classList.add('hidden')
+        document.getElementById('result').classList.remove('hidden')
+        document.getElementById('winner').innerText = 'Game drawn'   
+    }
 }
 
 
@@ -112,8 +117,11 @@ addEventListener('keyup',function(event){
     document.getElementById('user-score').innerText =0
     document.getElementById('comp-score').innerText =0
     document.getElementById('round').innerText =0
+    for(let l =0;l<9;l++){
+        document.getElementById(`${l}`).childNodes[1].innerText= ''
+        document.getElementById('user-option').classList.remove('hidden')
 
-    }
+    }}
 
 })
 
